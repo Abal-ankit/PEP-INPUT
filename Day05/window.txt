@@ -1,0 +1,4 @@
+1. There are exactly two windows, namely application and document windows.
+    => application window is the window which is the while application that is under development.
+    => document window is the window under application window that acts as an component. That's why we write document.createElement, etc.
+
