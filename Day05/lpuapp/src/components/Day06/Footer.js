@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style.css';
 
 function Footer() {
 
@@ -8,8 +9,11 @@ function Footer() {
     }
     
   return (
-    <div>Name : {student.name}</div>
-  )
+    <div>
+      <p className="para">Footer component</p>
+      {/* <p>Name : {student.name}</p> */}
+    </div>
+  );
 }
 
 export default Footer;

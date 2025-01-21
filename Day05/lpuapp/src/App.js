@@ -1,14 +1,20 @@
 import React from 'react';
-import Header from './components/Header';
 import './App.css';
-import Footer from './components/Footer';
+import Header from './components/Day06/Header';
+import Footer from './components/Day06/Footer';
+import Parent from './components/Day07/Parent';
+import Interest from './components/Day07/Interest';
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Parent />
       <Footer />
+
+      {/* <Interest /> */}
     </div>
   );
 }
