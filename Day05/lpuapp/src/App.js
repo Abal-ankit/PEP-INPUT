@@ -5,8 +5,10 @@ import './App.css';
 // import Parent from './components/Day07/Parent';
 // import Interest from './components/Day07/Interest';
 // import Hook from './components/Day08/Hook';
-import UseEffectHook from './components/Day08/UseEffectHook';
-import ShoppingCart from './components/Day08/Assignment/ShoppingCart';
+// import UseEffectHook from './components/Day08/UseEffectHook';
+// import ShoppingCart from './components/Day08/Assignment/ShoppingCart';
+// import BasicEvents from './components/Day09/BasicEvents';
+import KnowYourself from './components/Day09/KnowYourself';
 
 
 
@@ -19,7 +21,9 @@ function App() {
       {/* <Hook /> */}
       {/* <Interest /> */}
       {/* <UseEffectHook /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      {/* <BasicEvents /> */}
+      <KnowYourself />
     </div>
   );
 }
