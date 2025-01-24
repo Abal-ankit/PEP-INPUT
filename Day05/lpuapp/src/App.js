@@ -8,7 +8,9 @@ import './App.css';
 // import UseEffectHook from './components/Day08/UseEffectHook';
 // import ShoppingCart from './components/Day08/Assignment/ShoppingCart';
 // import BasicEvents from './components/Day09/BasicEvents';
-import KnowYourself from './components/Day09/KnowYourself';
+// import KnowYourself from './components/Day09/KnowYourself';
+// import BarChart from './components/Day10/BarChart';
+import Visual from './components/Day10/Visual';
 
 
 
@@ -23,7 +25,9 @@ function App() {
       {/* <UseEffectHook /> */}
       {/* <ShoppingCart /> */}
       {/* <BasicEvents /> */}
-      <KnowYourself />
+      {/* <KnowYourself /> */}
+      {/* <BarChart /> */}
+      <Visual />
     </div>
   );
 }
