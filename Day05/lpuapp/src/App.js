@@ -10,7 +10,8 @@ import './App.css';
 // import BasicEvents from './components/Day09/BasicEvents';
 // import KnowYourself from './components/Day09/KnowYourself';
 // import BarChart from './components/Day10/BarChart';
-import Visual from './components/Day10/Visual';
+// import Visual from './components/Day10/Visual';
+import Context from './components/Day11/Context';
 
 
 
@@ -27,7 +28,8 @@ function App() {
       {/* <BasicEvents /> */}
       {/* <KnowYourself /> */}
       {/* <BarChart /> */}
-      <Visual />
+      {/* <Visual /> */}
+      <Context />
     </div>
   );
 }
