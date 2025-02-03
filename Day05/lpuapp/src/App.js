@@ -11,7 +11,9 @@ import './App.css';
 // import KnowYourself from './components/Day09/KnowYourself';
 // import BarChart from './components/Day10/BarChart';
 // import Visual from './components/Day10/Visual';
-import Context from './components/Day11/Context';
+// import Context from './components/Day11/Context';
+import { AdminGreeting, UserGreeting } from './components/Day12/Greeting';
+import Greeting from './components/Day12/Greeting';
 
 
 
@@ -29,7 +31,10 @@ function App() {
       {/* <KnowYourself /> */}
       {/* <BarChart /> */}
       {/* <Visual /> */}
-      <Context />
+      {/* <Context /> */}
+      <Greeting />
+      <AdminGreeting />
+      <UserGreeting />
     </div>
   );
 }
