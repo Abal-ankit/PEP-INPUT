@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import Convert from './components/Day13/Convert';
+import Bootstrap from './components/Day13/Bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import ReactBootstrap from './components/Day13/ReactBootrap';
 // import Header from './components/Day06/Header';
 // import Footer from './components/Day06/Footer';
 // import Parent from './components/Day07/Parent';
@@ -12,8 +16,8 @@ import './App.css';
 // import BarChart from './components/Day10/BarChart';
 // import Visual from './components/Day10/Visual';
 // import Context from './components/Day11/Context';
-import { AdminGreeting, UserGreeting } from './components/Day12/Greeting';
-import Greeting from './components/Day12/Greeting';
+// import { AdminGreeting, UserGreeting } from './components/Day12/Greeting';
+// import Greeting from './components/Day12/Greeting';
 
 
 
@@ -32,9 +36,12 @@ function App() {
       {/* <BarChart /> */}
       {/* <Visual /> */}
       {/* <Context /> */}
-      <Greeting />
-      <AdminGreeting />
-      <UserGreeting />
+      {/* <Greeting /> */}
+      {/* <AdminGreeting />
+      <UserGreeting /> */}
+      {/* <Convert /> */}
+      {/* <Bootstrap /> */}
+      <ReactBootstrap />
     </div>
   );
 }

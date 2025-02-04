@@ -1,10 +1,10 @@
-# Day04 => Arrow Function, Object Literal Enhacement and coomputed Property.
-# Day05 => create-react-app and react application folder structure and workflow.
-    Followings day work in inside the component folder of day05 folder.
-# Day06 => Class Component, Functional Component and Arrow Function Component.
-# Day07 => Props, Destructing of objects and even handler.
-# Day08 => Callback function, Hooks in React(useState, useEffect) and one assignment(shopping cart).
-# Day09 => Event Handlers, Virtual Dom, Synthetic Event.
-# Day10 => chart.js
-# Day11 => Context, Context API in React, useContext and createContext.
-# Day12 => Revised basic javascript and mainly array methods and some react concepts.
+- Day04 => Arrow Function, Object Literal Enhacement and coomputed Property.
+- Day05 => create-react-app and react application folder structure and workflow.
+- Day06 => Class Component, Functional Component and Arrow Function Component.
+- Day07 => Props, Destructing of objects and even handler.
+- Day08 => Callback function, Hooks in React(useState, useEffect) and one assignment(shopping cart).
+- Day09 => Event Handlers, Virtual Dom, Synthetic Event.
+- Day10 => chart.js
+- Day11 => Context, Context API in React, useContext and createContext.
+- Day12 => Revised basic javascript and mainly array methods and some react concepts.
+- Day13 => Bootstrap and react-bootstrap
