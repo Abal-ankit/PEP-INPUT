@@ -8,3 +8,4 @@
 - Day11 => Context, Context API in React, useContext and createContext.
 - Day12 => Revised basic javascript and mainly array methods and some react concepts.
 - Day13 => Bootstrap and react-bootstrap
+- Day14 => Fetch API and axios and api call to typecode.com.

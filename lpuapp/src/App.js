@@ -4,6 +4,8 @@ import Convert from './components/Day13/Convert';
 import Bootstrap from './components/Day13/Bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactBootstrap from './components/Day13/ReactBootrap';
+import Axios from './components/Day14/Axios';
+// import FetchResources from './components/Day14/FetchResources';
 // import Header from './components/Day06/Header';
 // import Footer from './components/Day06/Footer';
 // import Parent from './components/Day07/Parent';
@@ -41,7 +43,9 @@ function App() {
       <UserGreeting /> */}
       {/* <Convert /> */}
       {/* <Bootstrap /> */}
-      <ReactBootstrap />
+      {/* <ReactBootstrap /> */}
+      {/* <FetchResources /> */}
+      <Axios />
     </div>
   );
 }
