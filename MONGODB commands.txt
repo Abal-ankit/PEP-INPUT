@@ -1,0 +1,14 @@
+MONGODB commands : =>
+
+1. use <db_name> -> create new db if not exists otherwise use the existing one
+2. db -> shows current db
+3. db.createCollection("users") -> create a collection
+4. show collections -> list out all collections
+5. db.users.insertOne({name : "ankit", age : 20, gender : "male"}) -> insert one object in collection
+6. db.users.find() -> shows data in the collection named users
+7. db.users.findOne({name : "Ankit"}) -> It will find the first instance of "Ankit"
+8. db.users.find({name : "Ankit"}) -> It will list out all documents having name "Ankit"
+9. db.users.find({age : {$gt : 15}) -> Retrieve documents having age greater than(gt) than 15. Similarly greater than and equal to(gte).x`
+10. db.users.insertMany([{name : "sachin", age : 18, gender : "male"}, {name : "sunny", age : 14, gender : "male"}, {name : "astha", age : 19, gender : "female"}]) -> Insert multiple documents into collection
+11. db.users.find().limit(2) -> Number of records to show limited by "limit"
+12. db.users.find().sort({age : 1}) -> Sort the document in ascending order as {age : 1} commands increasing order. For descending order {age : -1}
