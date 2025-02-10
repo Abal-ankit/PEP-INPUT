@@ -12,3 +12,4 @@
 - Day15 => useRef, useEffect, conditional rendering, formik and Yup library for form validation.
 - Day16 => Babel, Webpack and routing using react-router-dom.
 - Day17 => MongoDB installation and basic crud operation on collection.
+- Day18 => MongoDB advnced query like mixing of "logical or", "logical and", and many more.

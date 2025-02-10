@@ -1,14 +1,58 @@
 MONGODB commands : =>
 
 1. use <db_name> -> create new db if not exists otherwise use the existing one
+
 2. db -> shows current db
+
 3. db.createCollection("users") -> create a collection
+
 4. show collections -> list out all collections
+
 5. db.users.insertOne({name : "ankit", age : 20, gender : "male"}) -> insert one object in collection
+
 6. db.users.find() -> shows data in the collection named users
+
 7. db.users.findOne({name : "Ankit"}) -> It will find the first instance of "Ankit"
+
 8. db.users.find({name : "Ankit"}) -> It will list out all documents having name "Ankit"
-9. db.users.find({age : {$gt : 15}) -> Retrieve documents having age greater than(gt) than 15. Similarly greater than and equal to(gte).x`
+
+9. db.users.find({age : {$gt : 15}}) -> Retrieve documents having age greater than(gt) than 15. Similarly greater than and equal to(gte), {(<), $lt}, {(<=), $lte}
+
 10. db.users.insertMany([{name : "sachin", age : 18, gender : "male"}, {name : "sunny", age : 14, gender : "male"}, {name : "astha", age : 19, gender : "female"}]) -> Insert multiple documents into collection
+
 11. db.users.find().limit(2) -> Number of records to show limited by "limit"
+
 12. db.users.find().sort({age : 1}) -> Sort the document in ascending order as {age : 1} commands increasing order. For descending order {age : -1}
+
+13. db.users.find({name : {$eq : 'Michael Brown'}}) -> Find the documents having name 'Michael Brown'
+
+14. db.users.find({status : {$ne : 'active'}}) -> List down all documents having status not equal to 'active' and the one not having status as key
+
+15. db.users.find({name : {$in : ['ankit', 'astha']}}) -> List down all documents which has value for 'name' key either 'ankit' or 'astha'
+
+16. db.users.find({name : {$nin : ['ankit', 'astha']}}) -> List down all documents which has value for 'name' key neither 'ankit' or 'astha'
+
+17. db.users.find({$and : [{age : {$gt : 15}}, {status : {$eq : 'active'}}]}) -> This is how 'logical and' operation in 
+mongoDB work. The query asks for documets having age greater than 15 and status equal to active.
+
+18. db.users.find({$or : [{status : {$ne : 'active'}}, {age : {$lt : 25}}]}) -> This is 'logical or' operation. The query asks for documents having either status not equal to active or age less than 25
+
+19. db.users.find({$nor : [{age : 25}, {status : 'active'}]}) -> This is 'logical nor' operation. It asks for documents having neither age is 25 nor status is active
+
+20. db.users.find({name : {$not : /^A/i}}) -> List all documents having name not starts with 'a/A'
+
+21. db.users.find({email : {$exists : true}}) -> Find all documents for which email exists and if {$exists : false} which means documents for which email doesn't exists
+
+22. db.users.find({age : {$type : 'int'}}) -> This is data type checking. Data types will be {'int', 'string', 'array'}
+
+23. db.users.updateOne({name : 'Jane Smith'}, {$set : {salary : 80000}}) -> Updates the documents having name 'Jane Smith'. Set the document salary to 80000
+
+24. db.users.updateOne({name : 'Yash'}, {$set : {status : 'active'}}, {upsert : true}) -> If document having {name : 'Yash'} doesn't exist it will insert a new one with two key value pairs {{name : 'Yash'}, {status : 'active'}} 
+
+25. db.users.updateOne({name : 'nishant'}, {$setOnInsert : {createdAt : new Date()}, $set : {status : 'active'}}, {upsert : true}) -> $setOnInsert inserts fields mentioned under it when updateOne happens to insert new document instead of update one otherwise it will not insert the fields mentioned under it. This will work if upsert is true.
+
+26. db.users.updateOne({name : 'Michael Brown'}, {$inc : {salary : 10}}) -> $inc is increment operator which will increment the salary value by 10
+
+27. db.users.updateMany({}, {$set : {loginCount : 0}}) -> It will add a filed {loginCount : 0} to all documents in users collection
+
+28. db.users.updateMany({}, {$inc : {loginCount : 1}}) -> It will increment all documents field loginCount by 1
