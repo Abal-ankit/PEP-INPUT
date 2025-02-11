@@ -13,3 +13,4 @@
 - Day16 => Babel, Webpack and routing using react-router-dom.
 - Day17 => MongoDB installation and basic crud operation on collection.
 - Day18 => MongoDB advnced query like mixing of "logical or", "logical and", and many more.
+- Day19 => SOLID principles, separating router from app.js, createBrowserRouter, RouterProvider, useRouteError and useLoaderData
