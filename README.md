@@ -14,3 +14,5 @@
 - Day17 => MongoDB installation and basic crud operation on collection.
 - Day18 => MongoDB advnced query like mixing of "logical or", "logical and", and many more.
 - Day19 => SOLID principles, separating router from app.js, createBrowserRouter, RouterProvider, useRouteError and useLoaderData
+- Day20 => Absent in Class
+- Day21 => Example of useContext and useMemo and some mongoDB commands.

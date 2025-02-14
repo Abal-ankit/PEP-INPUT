@@ -27,6 +27,7 @@ import SignUpWithFormik from './components/Day15/SignUpWithFormik';
 import Assignment from "./components/Day16/Assignment";
 import Blog from "./components/Day16/Blog";
 import Post from "./components/Day16/Post";
+import HookExample from "./components/Day21/Hook";
 
 
 export {
@@ -59,5 +60,6 @@ export {
   SignUpWithFormik,
   Assignment,
   Blog,
-  Post
+  Post,
+  HookExample
 };

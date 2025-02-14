@@ -56,3 +56,17 @@ mongoDB work. The query asks for documets having age greater than 15 and status 
 27. db.users.updateMany({}, {$set : {loginCount : 0}}) -> It will add a filed {loginCount : 0} to all documents in users collection
 
 28. db.users.updateMany({}, {$inc : {loginCount : 1}}) -> It will increment all documents field loginCount by 1
+
+29. db.orders.deleteOne({status : "pending"}) -> Delete first document having {status : "pending"}
+
+30. db.orders.deleteMany({total : {$lt : 449}}) -> Delete all documents which has total less than 449
+
+31. db.employees.countDocuments({country : "India"}) -> Count the documents having country as India
+
+32. db.employees.count({country : "India"}) -> Do the same as no. 31 but is depricated
+
+33. db.employees.updateOne({age : {$lt : 0}}, {$set : {age : 5}}) -> Find all documents having negative age value and thereafter updating it with 5
+
+34. db.employees.distinct('country') -> Lists all unique country value in the countDocuments
+
+35. db.employees.aggregate([{$group : {_id : "$country", count : {$sum : 1}}}]) -> It lists out the count of documents by each country.

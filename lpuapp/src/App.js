@@ -32,53 +32,55 @@ import {
   SignUpWithFormik,
   Assignment,
   Blog,
-  Post
+  Post,
+  HookExample
 } from "./Head";
 
 
 
 function App() {
   return (
-     <Router>
-      <nav>
-        <Link to='/'>Home</Link> | <Link to='about'>About Us</Link> | <Link to='blog'>Blog</Link>
-      </nav>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/blog' element={<Blog />}>
-          <Route path=':postID' element={<Post />} />
-        </Route>
-      </Routes>
-    </Router>
-    // <div className="App">
-    //   {/* <Header />
-    //   <Parent />
-    //   <Footer /> */}
-    //   {/* <Hook /> */}
-    //   {/* <Interest /> */}
-    //   {/* <UseEffectHook /> */}
-    //   {/* <ShoppingCart /> */}
-    //   {/* <BasicEvents /> */}
-    //   {/* <KnowYourself /> */}
-    //   {/* <BarChart /> */}
-    //   {/* <Visual /> */}
-    //   {/* <Context /> */}
-    //   {/* <Greeting /> */}
-    //   {/* <AdminGreeting />
-    //   <UserGreeting /> */}
-    //   {/* <Convert /> */}
-    //   {/* <Bootstrap /> */}
-    //   {/* <ReactBootstrap /> */}
-    //   {/* <FetchResources /> */}
-    //   {/* <Axios /> */}
-    //   {/* <FocusInputUseRef /> */}
-    //   {/* <PreviousValueUseRef /> */}
-    //   {/* <FormUseRef /> */}
-    //   {/* <ConditionalRendering /> */}
-    //   {/* <SignUpWithFormik /> */}
-    //   <Assignment />
-    // </div>
+    //  <Router>
+    //   <nav>
+    //     <Link to='/'>Home</Link> | <Link to='about'>About Us</Link> | <Link to='blog'>Blog</Link>
+    //   </nav>
+    //   <Routes>
+    //     <Route path='/' element={<Home />} />
+    //     <Route path='/about' element={<About />} />
+    //     <Route path='/blog' element={<Blog />}>
+    //       <Route path=':postID' element={<Post />} />
+    //     </Route>
+    //   </Routes>
+    // </Router>
+    <div className="App">
+      {/* <Header />
+      <Parent />
+      <Footer /> */}
+      {/* <Hook /> */}
+      {/* <Interest /> */}
+      {/* <UseEffectHook /> */}
+      {/* <ShoppingCart /> */}
+      {/* <BasicEvents /> */}
+      {/* <KnowYourself /> */}
+      {/* <BarChart /> */}
+      {/* <Visual /> */}
+      {/* <Context /> */}
+      {/* <Greeting /> */}
+      {/* <AdminGreeting />
+      <UserGreeting /> */}
+      {/* <Convert /> */}
+      {/* <Bootstrap /> */}
+      {/* <ReactBootstrap /> */}
+      {/* <FetchResources /> */}
+      {/* <Axios /> */}
+      {/* <FocusInputUseRef /> */}
+      {/* <PreviousValueUseRef /> */}
+      {/* <FormUseRef /> */}
+      {/* <ConditionalRendering /> */}
+      {/* <SignUpWithFormik /> */}
+      {/* <Assignment /> */}
+      <HookExample />
+    </div>
   );
 }
 
